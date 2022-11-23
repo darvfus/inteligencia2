@@ -1,0 +1,591 @@
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+
+    <title>Ristorante Con Fusion: About Us</title>
+    <!-- Latest compiled and minified CSS -->
+
+
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+crossorigin="anonymous"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    
+
+   
+    <link rel="stylesheet" type="text/css" href="about.css"/>
+   
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-min.css"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+</head>
+<body>
+ 
+  <div class="skewed-header"> 
+    <div class="header-bg" style="background-image: url('about.jpg');">
+     
+      <div class="skewed-header-wrapper"> 
+  
+            
+  </div>
+</div>
+</div>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+ 
+ 
+    <img src=" logo.png"   height="50" width="50" alt="panaderia"/>
+ 
+ 
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+ 
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto" "menu">
+      <li class="nav-item  ">
+                        
+        <a class="nav-link" href="#"><span class="fa fa-phone"></span><p1> 8am a 8pm<br> 
+           Tel: 7777871674 </p1></a>
+        
+        <li class="nav-item  ">
+         
+        <a class="nav-link" href="index.html"> <span class="fa fa-home"></span>Inicio </a>
+        </li>
+<li class="nav-item  ">
+    <a class="nav-link" href="about.html"> <span class="fa fa-info"></span>Ponentes </a>
+</li>
+
+ 
+<li class="nav-item  ">
+  <a class="nav-link" href="contact.html"><span class="fa fa-address-book" aria-hidden="true"></span> Contacto</a>
+  </li>
+ 
+  <li class="nav-item">
+    
+    <span class=" nav-link   ">
+               <a   data-toggle="modal" data-target="#loginModal">
+               <span class="fa fa-sign-in" ></span> Login</a>
+           </span> 
+  </li>
+<form class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+</form>
+ 
+ 
+
+ 
+
+    
+    
+    </ul>
+    
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" role="content">
+      <!-- Modal content-->
+      <div class="modal-content" >
+          <div class="modal-header navbar-dark"  >
+              <h4 class="modal-title">Login </h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body" >
+              <form>
+                  <div class="form-row">
+                      <div class="form-group col-sm-4">
+                              <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                              <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                      </div>
+                      <div class="form-group col-sm-4">
+                          <label class="sr-only" for="exampleInputPassword3">Password</label>
+                          <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                      </div>
+                      <div class="col-sm-auto">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox">
+                              <label class="form-check-label"> Remember me
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="reserveTableModal" class="modal" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+      <!-- Modal content-->
+      <div class="modal-content">
+          <div class="modal-header" style="background-color:#75cdca;">
+              <h3 class="modal-title">Reserve A Date </h3>
+              <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          <div class="modal-body" style="background-color:#75cdca;">
+              <form id="reserveForm">
+                  <div class="form-group row">
+                      <label class="col-md-2 col-form-label">Number of Guests:</label>
+                      <div class="col-md-9 align-self-center">
+                          <input type="radio" id="guests1" name="guests" value="1">
+                          <label class="mr-1" for="guests1"> 1 </label>
+                          <input type="radio" id="guests2" name="guests" value="2">
+                          <label class="mr-1" for="guests2"> 2 </label>
+                          <input type="radio" id="guests3" name="guests" value="3">
+                          <label class="mr-1" for="guests3"> 3 </label>
+                          <input type="radio" id="guests4" name="guests" value="4">
+                          <label class="mr-1" for="guests4"> 4 </label>
+                          <input type="radio" id="guests5" name="guests" value="5">
+                          <label class="mr-1" for="guests5"> 5 </label>
+                          <input type="radio" id="guests6" name="guests" value="6">
+                          <label class="mr-1" for="guests6"> 6 </label>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-md-2 col-form-label">Section:</label>
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn btn-success active">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked=""> Non-smoking
+                          </label>
+                          <label class="btn btn-danger">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> smoking
+                          </label>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-2 control-label">Date 
+                    
+                        <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                        <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true">
+                    </span> </label>
+                    <label class="col-sm-2 control-label"> time 
+                      <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                      <span class="glyphicon glyphicon-time form-control-feedback" aria-hidden="true">
+                  </span> </label>
+              </div>                 
+                  <div class="form-group row">
+                      <div class="offset-md-2 col-md-1">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                              Close
+                          </button>
+                      </div>
+                      <div class="col-md-1">
+                          <button type="submit" class="btn btn-primary">
+                              Reserve
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+ 
+
+  
+<div class="body1"> 
+    <div class="titulo"> 
+    <h1> <center>I<u>nteligencia Articial en la vida cotidiana</center></u></h1>
+     
+  </div>
+</div>
+
+<div class="row row-content">
+    <div class="col-12">
+    <h2> Ponentes</h2>
+    
+       <ul class="nav nav-tabs ">
+      <li class="nav-item">
+        <a class="nav-link activate" href="#google"
+          role="tab" data-toggle="tab">Larry Page & Serguéi Brin, CEO Google</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link activate" href="#argentina"
+                  role="tab" data-toggle="tab">Andrés Oppenhimer, Peridista Economista   </a>
+                       </li>
+
+                       <li class="nav-item">
+                        <a class="nav-link activate" href="#BMW"
+                          role="tab" data-toggle="tab">Harald Gottsche, CEO BMW</a>
+                               </li>
+
+                               <li class="nav-item">
+                                <a class="nav-link activate" href="#tesla"
+                                  role="tab" data-toggle="tab">Elon Musk, CEO SpaceX, Tesla</a>
+                                       </li>
+
+                                       <li class="nav-item">
+                                        <a class="nav-link activate" href="#scale"
+                                          role="tab" data-toggle="tab">Alexandr Wang, CEO Scale AI</a>
+                                               </li>
+                
+                                               <li class="nav-item">
+                                                <a class="nav-link activate" href="pai"
+                                                  role="tab" data-toggle="tab">KAi-Fy Lee, CEO Sinovation Ventures</a>
+                                                       </li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane show active" id="google">
+      <h3>Larry Page & Serguéi Brin <small>CEO Google</small></h3>
+        <p class="d-node d-sm-block">Informáticos estadounidenses, creadores del buscador de internet Google. Hijo de profesores universitarios, Larry Page nació en East Lansing (Míchigan) en 1973, y mostró desde pequeño su afición a la tecnología y a las mismas materias que sus padres impartían (inteligencia artificial su padre, y programación su madre). Se cuenta que su ídolo juvenil era el célebre físico e inventor de origen serbiocroata Nikola Tesla. Graduado en la Universidad de Míchigan, Page quiso ampliar su formación cursando un doctorado en ciencias de la computación en la Universidad de Stanford, donde conocería a Sergei Brin.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="argentina"> 
+      <h3>Andrés Oppenhimer <small>Peridista Economista </small></h3>
+      <p class="d-node d-sm-block">Nacido en Buenos Aires, Argentina, desde 1985 reside en Miami. Inició sus estudios en la Facultad de Derecho de la Universidad de Buenos Aires y se mudó a Estados Unidos en 1976 con una beca del World Press Institute para seguir sus estudios en Macalester College, de St. Paul, Minnesota.
+
+        En 1978 obtuvo su maestría en periodismo de la Universidad de Columbia, en Nueva York.
+        
+        Ha colaborado —entre otras publicaciones— para The New York Times, The Washington Post, The New Republic, CBS News, la BBC de Londres y el diario El País de España.
+        
+        Fue seleccionado por el Forbes Media Guide como uno de los “500 periodistas más importantes” para Estados Unidos en 1993, y por la revista Poder como uno de las 100 figuras "más poderosas" en América Latina en 2002.3</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="BMW"> 
+      <h3>Harald Gottsche <small>CEO BMW</small></h3>
+      <p class="d-node d-sm-block">Con una sobresaliente carrera de más de 20 años en BMW Group, Harald Gottsche será el nuevo presidente y CEO de BMW Group Planta San Luis Potosí, así lo dio a conocer el Consejo de Administración de BMW AG. 
+
+        El primero de diciembre Harald Gottsche será el responsable de la planta de producción más reciente, vanguardista y tecnológica de la Red de Producción Global de BMW Group.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tesla"> 
+      <h3>Elon Musk<small>CEO SpaceX, Tesla</small></h3>
+      <p class="d-node d-sm-block">Elon Musk es cofundador y líder de Tesla, SpaceX, Neuralink y The Boring Company.
+
+        Como cofundador y director general de Tesla, Elon lidera el diseño de productos, ingeniería y fabricación de los vehículos eléctricos, productos de batería y productos de energía solar a nivel mundial.
+        
+        Desde el inicio de la compañía en 2003, la misión de Tesla ha sido acelerar la transición del mundo a la energía sustentable. El primer producto de Tesla, el automóvil deportivo llamado Roadster, debutó en 2008, seguido por el sedán Model S, que se presentó en 2012, y el SUV Model X, que se lanzó en 2015. El Model S recibió el galardón Best Overall Car de Consumer Reports y ha recibido el reconocimiento Ultimate Car of the Year de Motor Trend, mientras que el Model X fue el primer SUV en obtener calificaciones de seguridad de 5 estrellas en cada categoría y subcategoría en las pruebas de la Administración Nacional de Seguridad de Tráfico en Carreteras. En 2017, Tesla comenzó la entrega de Model 3, un vehículo eléctrico dirigido al mercado masivo con más de 320 millas de autonomía, y presentó el Tesla Semi, que está diseñado para que sus propietarios ahorren al menos $ 200,000 por millón de millas basado únicamente en costos de combustible solo. En 2019, Tesla presentó la Cybertruck, que tendrá una mayor utilidad que una camioneta tradicional, con un desempeño de automóvil deportivo, así como el SUV compacto Model Y, que comenzó a entregarse a los clientes a principios de 2020.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="scale"> 
+      <h3>Alexandr Wang <small>CEO Scale AI</small></h3>
+      <p class="d-node d-sm-block">Empezó sus estudios en una de las universidades más prestigiosas del mundo: Instituto Tecnológico de Massachussets (MIT por sus siglas en inglés). Es hijo de inmigrantes chinos y su éxito se lo debe al esfuerzo de sus progenitores por buscarle un futuro brillante. Sin apellidos de relevancia o herencias importantes, este joven logró posicionarse en la industria tecnológica con mucha rapidez. Las mayores compañías del mundo, como Uber, Toyota o Airbnb, han depositado su confianza en él para optimizar el rendimiento de sus operaciones a nivel mundial.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="pai"> 
+      <h3>KAi-Fy Lee<small>CEO Sinovation Ventures</small></h3>
+      <p class="d-node d-sm-block"> is a Taiwanese computer scientist, businessman, and writer. He is currently based in Beijing, China.
+
+        Lee developed a speaker-independent, continuous speech recognition system as his Ph.D. thesis at Carnegie Mellon University. He later worked as an executive, first at Apple, then SGI, Microsoft, and Google.
+        
+        He became the focus of a 2005 legal dispute between Google and Microsoft, his former employer, due to a one-year non-compete agreement that he signed with Microsoft in 2000 when he became its corporate vice president of interactive services.[1]
+        
+        One of the most prominent figures in the Chinese internet sector, he was the founding director of Microsoft Research Asia, serving from 1998 to 2000; and president of Google China, serving from July 2005 through September 4, 2009. He created a website, Wǒxuéwǎng (Chinese: 我学网; lit. 'I learn Internet') dedicated to helping young Chinese people achieve in their studies and careers, and his "10 Letters to Chinese College Students" have spread widely on the web. He is one of the most followed micro-bloggers in China, in particular on Sina Weibo, where he has over 50 million followers.</p>
+    </div>
+    </div>
+ 
+
+
+
+    <div id="accordion">
+      <div class="card"> 
+        <div class="card-header" role="tab" id="Google">
+          <h3 class="mb-0">
+          <a data-toggle="collapse" data-target="#Google"> 
+            Larry Page & Serguéi Brin  <small>CEO Google</small>
+          </a>
+        </h3>
+        </div>
+      <div role="tabpanel" class="collapse show activate" id="Google" data-parent="#accordion">
+                       <div class="card-body"> 
+
+        <p class="d-node d-sm-block">Informáticos estadounidenses, creadores del buscador de internet Google. Hijo de profesores universitarios, Larry Page nació en East Lansing (Míchigan) en 1973, y mostró desde pequeño su afición a la tecnología y a las mismas materias que sus padres impartían (inteligencia artificial su padre, y programación su madre). Se cuenta que su ídolo juvenil era el célebre físico e inventor de origen serbiocroata Nikola Tesla. Graduado en la Universidad de Míchigan, Page quiso ampliar su formación cursando un doctorado en ciencias de la computación en la Universidad de Stanford, donde conocería a Sergei Brin.</p>
+
+      </div>
+    </div>
+  </div>
+ <div class="card"> 
+        <div class="card-header" role="tab" id="Argentina">
+          <h3 class="mb-0">
+          <a data-toggle="collapse" data-target="#Argentina"> 
+      
+            Andrés Oppenhimer<small>Periodista Economista</small>
+          </a>
+        </h3>
+        </div>
+
+        <div role="tabpanel" class="collapse show" id="Argentina" data-parent="#accordion">
+          <div class="card-body"> 
+            <p class="d-node d-sm-block">Nacido en Buenos Aires, Argentina, desde 1985 reside en Miami. Inició sus estudios en la Facultad de Derecho de la Universidad de Buenos Aires y se mudó a Estados Unidos en 1976 con una beca del World Press Institute para seguir sus estudios en Macalester College, de St. Paul, Minnesota.
+
+              En 1978 obtuvo su maestría en periodismo de la Universidad de Columbia, en Nueva York.
+              
+              Ha colaborado —entre otras publicaciones— para The New York Times, The Washington Post, The New Republic, CBS News, la BBC de Londres y el diario El País de España.
+              
+              Fue seleccionado por el Forbes Media Guide como uno de los “500 periodistas más importantes” para Estados Unidos en 1993, y por la revista Poder como uno de las 100 figuras "más poderosas" en América Latina en 2002.3​</p>
+          </div>
+        </div>
+  </div>
+
+  <div class="card"> 
+    <div class="card-header" role="tab" id="bmw">
+      <h3 class="mb-0">
+      <a data-toggle="collapse" data-target="#bmw"> 
+  
+        Harald Gottsche <small>CEO BMW</small>
+      </a>
+    </h3>
+    </div>
+
+    <div role="tabpanel" class="collapse show" id="bmw" data-parent="#accordion">
+      <div class="card-body"> 
+        <p class="d-node d-sm-block">Con una sobresaliente carrera de más de 20 años en BMW Group, Harald Gottsche será el nuevo presidente y CEO de BMW Group Planta San Luis Potosí, así lo dio a conocer el Consejo de Administración de BMW AG. 
+
+          El primero de diciembre Harald Gottsche será el responsable de la planta de producción más reciente, vanguardista y tecnológica de la Red de Producción Global de BMW Group.</p>
+      </div>
+    </div>
+</div>
+
+
+  <div class="card"> 
+    <div class="card-header" role="tab" id="Tesla">
+      <h3 class="mb-0">
+      <a data-toggle="collapse" data-target="#Tesla"> 
+        Elon Musk <small>CEO SpaceX, Tesla</small>
+      </a>
+    </h3>
+    </div>
+  <div role="tabpanel" class="collapse show activate" id="Tesla" data-parent="#accordion">
+                   <div class="card-body"> 
+
+    <p class="d-node d-sm-block">Elon Musk es cofundador y líder de Tesla, SpaceX, Neuralink y The Boring Company.
+
+      Como cofundador y director general de Tesla, Elon lidera el diseño de productos, ingeniería y fabricación de los vehículos eléctricos, productos de batería y productos de energía solar a nivel mundial.
+      
+      Desde el inicio de la compañía en 2003, la misión de Tesla ha sido acelerar la transición del mundo a la energía sustentable. El primer producto de Tesla, el automóvil deportivo llamado Roadster, debutó en 2008, seguido por el sedán Model S, que se presentó en 2012, y el SUV Model X, que se lanzó en 2015. El Model S recibió el galardón Best Overall Car de Consumer Reports y ha recibido el reconocimiento Ultimate Car of the Year de Motor Trend, mientras que el Model X fue el primer SUV en obtener calificaciones de seguridad de 5 estrellas en cada categoría y subcategoría en las pruebas de la Administración Nacional de Seguridad de Tráfico en Carreteras. En 2017, Tesla comenzó la entrega de Model 3, un vehículo eléctrico dirigido al mercado masivo con más de 320 millas de autonomía, y presentó el Tesla Semi, que está diseñado para que sus propietarios ahorren al menos $ 200,000 por millón de millas basado únicamente en costos de combustible solo. En 2019, Tesla presentó la Cybertruck, que tendrá una mayor utilidad que una camioneta tradicional, con un desempeño de automóvil deportivo, así como el SUV compacto Model Y, que comenzó a entregarse a los clientes a principios de 2020.</p>
+
+  </div>
+</div>
+</div>
+
+<div class="card"> 
+    <div class="card-header" role="tab" id="Scale">
+      <h3 class="mb-0">
+      <a data-toggle="collapse" data-target="#Scale"> 
+  
+        Alexandr Wang <small>CEO Scale AI</small>
+      </a>
+    </h3>
+    </div>
+
+    <div role="tabpanel" class="collapse show" id="Scale" data-parent="#accordion">
+      <div class="card-body"> 
+        <p class="d-node d-sm-block">Empezó sus estudios en una de las universidades más prestigiosas del mundo: Instituto Tecnológico de Massachussets (MIT por sus siglas en inglés). Es hijo de inmigrantes chinos y su éxito se lo debe al esfuerzo de sus progenitores por buscarle un futuro brillante. Sin apellidos de relevancia o herencias importantes, este joven logró posicionarse en la industria tecnológica con mucha rapidez. Las mayores compañías del mundo, como Uber, Toyota o Airbnb, han depositado su confianza en él para optimizar el rendimiento de sus operaciones a nivel mundial​</p>
+      </div>
+    </div>
+</div>
+
+
+<div class="card"> 
+  <div class="card-header" role="tab" id="Pai">
+    <h3 class="mb-0">
+    <a data-toggle="collapse" data-target="#Pai"> 
+
+      KAi-Fy Lee <small>CEO Sinovation Ventures</small>
+    </a>
+  </h3>
+  </div>
+
+  <div role="tabpanel" class="collapse show" id="Pai" data-parent="#accordion">
+    <div class="card-body"> 
+      <p class="d-node d-sm-block"> is a Taiwanese computer scientist, businessman, and writer. He is currently based in Beijing, China.
+
+        Lee developed a speaker-independent, continuous speech recognition system as his Ph.D. thesis at Carnegie Mellon University. He later worked as an executive, first at Apple, then SGI, Microsoft, and Google.
+        
+        He became the focus of a 2005 legal dispute between Google and Microsoft, his former employer, due to a one-year non-compete agreement that he signed with Microsoft in 2000 when he became its corporate vice president of interactive services.[1]
+        
+        One of the most prominent figures in the Chinese internet sector, he was the founding director of Microsoft Research Asia, serving from 1998 to 2000; and president of Google China, serving from July 2005 through September 4, 2009. He created a website, Wǒxuéwǎng (Chinese: 我学网; lit. 'I learn Internet') dedicated to helping young Chinese people achieve in their studies and careers, and his "10 Letters to Chinese College Students" have spread widely on the web. He is one of the most followed micro-bloggers in China, in particular on Sina Weibo, where he has over 50 million followers.​</p>
+    </div>
+  </div>
+</div>
+  </div>
+ 
+
+
+
+<div class="squares-wrapper">
+    <div class="squares">
+        <div class="square">
+            <div class="img-wrapper">
+                <img src="1historia.PNG" alt="Fries">
+            </div>
+           
+            <div class="square-text-wrapper">
+              <h2>Inteligencia Artificial en su buscador </h2>
+  
+ 
+            </div>     
+</div>
+<div class="square">
+
+
+<div class="square-text-wrapper">
+  <h2>Lirbo crear o morir</h2>
+
+ </div>   
+<div class="img-wrapper">
+  <img src="2historia.PNG" alt="Fries">
+</div>  
+</div>
+<div class="square">
+<div class="img-wrapper">
+    <img src="3historia.PNG" alt="Fries">
+</div>
+
+<div class="square-text-wrapper">
+  <h2>Carrera profecional</h2>
+
+ </div>     
+</div>
+<div class="square">
+
+
+<div class="square-text-wrapper">
+<h2>Inteligencia Artificial Atomotriz</h2>
+
+ </div>   
+<div class="img-wrapper">
+<img src="4historia.png" alt="Fries">
+</div>  
+</div>
+
+<div class="square">
+  <div class="img-wrapper">
+      <img src="5historia.PNG" alt="Fries">
+  </div>
+  
+  <div class="square-text-wrapper">
+    <h2>Unicornio</h2>
+  
+   </div>     
+  </div>
+  <div class="square">
+  <div class="square-text-wrapper">
+    <h2>Potencial de la Inteligencia Artificial</h2>
+  
+   </div>   
+  <div class="img-wrapper">
+    <img src="6historia.PNG" alt="Fries">
+  </div>  
+  </div>
+ 
+
+<div class="square">
+<div class="img-wrapper">
+  <div class="img-wrapper"></div>
+    <center> <video
+      controls
+      poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
+    >
+      <source
+        type="video/webm"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm"
+      />
+      <source
+        type="video/mp4"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4"
+      />
+       
+    </center>
+    </video>
+</div>
+
+</div>
+<div class="square-text-wrapper">
+<h2>Historia completa</h2>
+
+Una breve reseña de nuestro tiempo juntos
+</div>   
+</div>  
+
+</div>
+</div>  		 
+</div>  
+				 
+	 
+<div class="Seccion-futura"> 
+    <div class="columna-c"> 
+      <div class="columna">
+
+
+
+
+        <a class="btn btn-social-icon btn-google" href="http://google.com/+"> <i class="fa fa-google-plus fa-lg"></i></a>
+        <a  class="btn btn-social-icon btn-facebook"href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+        
+        <p>© Copyright 2018 Ristorante Con Fusion</p>
+</div>
+
+
+  <div class="Columna ">
+ 
+    <i class="fas fa-wifi"></i>
+    <p> wifi</p>
+    <p> En el establecimiento</p>
+    
+ 
+</div>
+<div class="Columna "> 
+  <i class="fas fa-truck-moving"></i>
+<p>Servicio a Domicilio</p>
+<p>A partir de 20 piezas</p>
+</div>
+
+<div class="columna "> 
+<i class="fas fa-home"></i>
+<p>Ambiente familiar</p>
+<p>Para toda la familia</p>
+</div>
+
+  </div>
+
+</div>
+
+</div>
+
+</div> 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"
+></script>
+  </body></html>
